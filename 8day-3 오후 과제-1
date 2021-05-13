@@ -1,0 +1,9 @@
+create database mydb;
+use mydb;
+create table movie(tit char(20), act char(20), aud int);
+show tables;
+desc movie;
+insert into movie values('해운대', '설경구', 1139);
+insert into movie values('광해', '이병헌', 1302);
+insert into movie values('도둑들', '전지현', 1302);
+select * from movie;
