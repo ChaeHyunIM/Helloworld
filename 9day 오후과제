@@ -1,0 +1,16 @@
+# mySQL 접속
+create database aidb;
+create user ai'%' identified by '1234'
+select user();
+use mysql;
+create user ai@'%' identified by '1234';
+grant all privileges on acedb.*  to  ace@'%' with grant option;
+
+# cmd 접속
+user select();
+ create table aitab (
+    -> id int auto_increment primary key,
+    -> name varchar(20),
+    ->     kor tinyint,
+    ->     eng tinyint,
+    ->     mat tinyint);
