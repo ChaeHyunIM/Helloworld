@@ -6,7 +6,7 @@ from google.colab import drive
 
 drive.mount('/content/drive')
 
-p=pd.read_csv('/content/drive/MyDrive/pop5.csv')
+p=pd.read_csv('/content/drive/MyDrive/pop6.csv')
 
 ## 공공데이터 csv파일은 인코딩방식이 대부분 cp949나 euc-kr 방식
    https://teddylee777.github.io/pandas/%EA%B3%B5%EA%B3%B5%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%95%9C%EA%B8%80%EA%B9%A8%EC%A7%90%ED%98%84%EC%83%81-%ED%95%B4%EA%B2%B0%EB%B0%A9%EB%B2%95
@@ -14,15 +14,9 @@ p=pd.read_csv('/content/drive/MyDrive/pop5.csv')
 
 p
 
-p.iloc[3,3]
 
-type(p.iloc[3,3])
+p.columns=['자치구', '남자이동1', '여자이동1', '남자이동2', '여자이동2']
 
-
-
-p.columns=['남자이동1', '여자이동1', '남자이동2', '여자이동2']
-
-p.index=['서울특별시','종로구','중구','용산구','성동구','광진구','동대문구','중랑구','성북구','강북구','도봉구','노원구','은평구','서대문구','마포구','양천구','강서구','구로구','금천구','영등포구','동작구','관악구','서초구','강남구','송파구','강동구']
 
 p['소계1']=p['남자이동1']+p['여자이동1']
 p['소계2']=p['남자이동2']+p['여자이동2']
